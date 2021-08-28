@@ -1,0 +1,303 @@
+.wrapper{
+	/* 设置主div撑满整个屏幕 */
+	width: 100%;
+	height: 100%;
+}
+.location{
+	/* 1vw 相当于窗口的1% 多屏适配 */
+	height: 12vw;
+	background-color: #0097ff;
+	color: white;
+	font-size: 3.5vw;
+	/* 字体加粗 */
+	font-weight: 700;
+	/* 下面三行是为了垂直 水平居中 */
+	/* 弹性盒子 */
+	display: flex;
+	/* 主轴居中 */
+	justify-content: center;
+	/* 侧轴居中 */
+	align-items: center;
+}
+.search{
+	/* 1vw 相当于窗口的1% 多屏适配 */
+	height: 13vw;
+	/* 控制宽度 因为该区域变为固定定位时 不再默认撑满一行(父标记) 而成了由内容决定 所以需要设置宽度为100% */
+	width: 100vw;
+	background-color: #0097ff;
+	/* 下面三行是为了垂直 水平居中 */
+	/* 弹性盒子 */
+	display: flex;
+	/* 主轴居中 */
+	justify-content: center;
+	/* 侧轴居中 */
+	align-items: center;
+}
+.search-box{
+	width: 90vw;
+	background-color: white;
+	height: 10vw;
+	font-size: 3.5vw;
+	color: #aeaeae;
+	/* 下面三行是为了垂直 水平居中 */
+	/* 弹性盒子 */
+	display: flex;
+	/* 主轴居中 */
+	justify-content: center;
+	/* 侧轴居中 */
+	align-items: center;
+}
+.foodtype{
+	height: 48vw;
+	width: 100vw;
+	/* 弹性盒子 (横向排列)*/
+	display: flex;
+	/* 折行显示 */
+	flex-wrap: wrap;
+	/* 折行风格 */
+	justify-content: space-around;
+	/* 垂直居中 */
+	align-items: center;
+}
+.foodtype li{
+	/* 弹性盒子 (横向排列)*/
+	display: flex;
+	/* 改变排列方向 纵向 */
+	flex-direction: column;
+	/* 横向居中 */
+	justify-content: center;
+	/* 垂直居中 */
+	align-items: center;
+	width: 18vw;
+	height: 20vw;
+}
+.foodtype li img{
+	width: 12vw;
+	height: 10.3vw;
+}
+.foodtype li p{
+	font-size: 3.2vw;
+	color: #666;
+}
+.banner{
+	width: 95vw;
+	height: 30vw;
+	margin: 0 auto;
+	background-image: url(../img/index_banner.png);
+	/* 将背景图片缩放到适合div的大小 */
+	background-size: 100% 100%;
+	padding: 2vw 6vw;
+	box-sizing: border-box;
+}
+.banner h3{
+	font-size: 4.2vw;
+	
+}
+.banner p{
+	font-size: 3.4vw;
+	color: #666;
+	margin-bottom: 2.4vw;
+}
+.banner span{
+	font-size: 3vw;
+	color: #c79060;
+}
+.supermember{
+	width: 95vw;
+	margin: 0 auto;
+	box-sizing: border-box;
+	height: 11.5vw;
+	background-color: #feedc1;
+	/* 弹性盒子 (横向排列)*/
+	display: flex;
+	/* 左右分布 */
+	justify-content: space-between;
+	/* 垂直/侧轴 居中 */
+	align-items: center;
+	margin-top: 1.5vw;
+	padding: 0 4vw;
+}
+.left{
+	/* 弹性盒子 (横向排列)*/
+	display: flex;
+	/* 垂直居中 */
+	align-items: center;
+}
+.left img{
+	width: 6vw;
+	height: 6vw;
+	margin-right: 2vw;
+}
+.left h3{
+	font-size: 4vws;
+	margin-right: 2vw;
+}
+.right{
+	font-size: 3vw;
+}
+.left p{
+	font-size: 3vw;
+}
+.recommend{
+	height: 14vw;
+	/* 弹性盒子居中 */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.recommendline{
+	width: 8vw;
+	height: 0.2vw;
+	background-color: #888;
+}
+.recommend p{
+	font-size: 4vw;
+	margin: 0 1.5vw;
+}
+.recommendtype{
+	height: 8vw;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.recommend p{
+	font-size: 3.5vw;
+	color: #555;
+}
+.footer{
+	width: 100vw;
+	height: 14vw;
+	display: flex;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	justify-content: space-around;
+	align-items: center;
+	background-color: white;
+}
+.footer div{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.footer div p{
+	font-size: 2.8vw;
+	color: #999;
+}
+.footer div i{
+	font-size: 2.8vw;
+}
+.business li{
+	display: flex;
+	padding: 2.5vw;
+	border-bottom: 1px solid #ddd;
+}
+.business li img{
+	height: 18vw;
+	flex:0 0 18vw;
+	margin-right: 3vw;
+}
+.businessinfo{
+	flex:1;
+}
+.businessname{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.businessname h3{
+	font-size: 4vw;
+	color: #333;
+}
+.businessstar{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 3vw;
+	margin-top: 2vw;
+}
+.starleft{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.fa-star{
+	color: #fec80e;
+}
+.starright{
+	background-color: #0097FF;
+	color: white;
+	padding: 0.7vw;
+	font-size: 2.5vw;
+	border-radius: 1vw;
+}
+.businessdelivery{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #666;
+	font-size: 3vw;
+	margin-top: 2vw;
+}
+.businessexplain{
+	font-size: 2.6vw;
+	color: #666;
+	border: 1px solid #ddd;
+	display: inline-block;
+	padding: 0.6vw 0;
+}
+.businesspromotion{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 2vw;
+}
+.promotionleft{
+	display: flex;
+	align-items: center;
+}
+.promotionleft div{
+	width: 4vw;
+	height: 4vw;
+	background-color: #70bc46;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 3vw;
+	margin-right: 1vw;
+}
+.promotionleft p{
+	font-size: 3vw;
+	color: #666;
+}
+.promotionright{
+	display: flex;
+	align-items: center;
+	font-size: 2.5vw;
+	color: #999;
+}
+.promotionright p{
+	margin-right: 1vw;
+}
+.businesstj{
+	display: flex;
+	align-items: center;
+	margin-top: 2vw;
+}
+.te{
+	width: 4vw;
+	height: 4vw;
+	background-color: orange;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 3vw;
+	margin-right: 1vw;
+}
+.businesstj p{
+	font-size: 3vw;
+	color: #666;
+}
